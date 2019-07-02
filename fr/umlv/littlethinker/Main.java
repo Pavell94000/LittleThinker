@@ -2,7 +2,7 @@ package fr.umlv.littlethinker;
 
 /**
  * Classe de démarrage de LittleThinker
- * @author Séverin Gosset et Christophe Callé
+ * @author Sylvain Cherrier, Séverin Gosset et Christophe Callé
  * @version 1.0
  */
 public class Main {
