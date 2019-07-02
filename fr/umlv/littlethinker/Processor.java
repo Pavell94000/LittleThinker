@@ -78,7 +78,7 @@ public class Processor extends JPanel{
 				"simulateur de microprocesseur très basic, "+
 				"qui permet de\nvisualiser le fonctionnement"+
 				" théorique d'un micro-processeur.\n\n\n"+
-				"Auteurs : Severin Gosset et Christophe Callé, Novembre 2017.\n"+
+				"Auteurs : Sylvain Cherrier (2005), Severin Gosset et Christophe Callé, Novembre 2017.\n"+
 				"Projet réalisé sous le tutorat de Sylvain Cherrier.\n\n\n"+
 				"Convention d'écriture : On préfixe par\n"+
 				"# pour un registre,\na pour l'accumulateur,\n"+
