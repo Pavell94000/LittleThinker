@@ -734,7 +734,12 @@ public class Processor extends JPanel{
 	    int value;
 	    if (nbToken == 2) {
 	        if (b.getAsBoolean()) {
-                value = Integer.parseInt(cmd[1]);
+	        	//TODO homogénéiser le décodage des adresses... getAddress ne marche pas bien !!
+	        	if (cmd[1].charAt(0) == '#') {
+	        		value = registers.getR(Integer.parseInt(cmd[1].substring(1)));
+	        	} else {
+	        		value = Integer.parseInt(cmd[1]);
+	        	}
                 controls.setI(value, slider.getValue());
                 return true;
 	        }
@@ -752,7 +757,7 @@ public class Processor extends JPanel{
 	 */
 	private int getAdress(String str) {
 		int res;
-		String tmp = str.substring(1);
+		String tmp = str.substring(1); //pourquoi ???
 		if (tmp.charAt(0) == '#') {
 			res = registers.getR(Integer.parseInt(tmp.substring(1)));
 		}
